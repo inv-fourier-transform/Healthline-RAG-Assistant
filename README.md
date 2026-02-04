@@ -72,6 +72,8 @@ Inspired by a conversation with a doctor neighbour who found it time‑consuming
 
 [![Watch the demo](artifacts/thumbnail.png)](artifacts/video_demo.mp4)
 
+*The demo video can be viewed by downloading it. It's just 6 MB in size!*
+
 ---
 ## 📂 Folder Structure
 
