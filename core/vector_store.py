@@ -1,7 +1,8 @@
 # /core/vectorstore.py
 import shutil
 from pathlib import Path
-from langchain_chroma import Chroma
+#from langchain_chroma import Chroma
+from langchain_community.vectorstores import Chroma
 
 def reset_persist_dir(persist_directory: str):
     p = Path(persist_directory)

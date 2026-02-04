@@ -7,7 +7,8 @@ from core.loader import load_healthline_urls
 from core.chunker import split_docs
 from core.embeddings import get_embeddings
 from core.vector_store import reset_persist_dir
-from langchain_chroma import Chroma  # current integration
+#from langchain_chroma import Chroma  # current integration
+from langchain_community.vectorstores import Chroma
 
 FINGERPRINT_FILE = "collection_fingerprint.txt"
 SOURCES_FILE = "sources.json"

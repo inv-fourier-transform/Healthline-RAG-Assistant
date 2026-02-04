@@ -1,6 +1,57 @@
-# Healthline Assistant: RAG-based chatbot for articles 🩺⚡️
+<p align="center">
+  <img src="https://img.icons8.com/ios-filled/200/FF10F0/medical-doctor.png" width="120" alt="Healthline Assistant" />
+</p>
 
-A fast, grounded, Healthline‑only chatbot that builds local embeddings from provided URLs and answers strictly from those sources.
+<h2 align="center">🩺 Healthline RAG Assistant</h2>
+<p align="center"><b>A RAG-based chatbot for querying and summarizing health news articles.</b></p>
+
+<p align="center">
+  <!-- Core Stack -->
+  <a href="https://python.langchain.com/">
+    <img alt="LangChain" src="https://img.shields.io/badge/langchain-0.2+-1c3c3c?logo=chainlink&logoColor=white">
+  </a>
+  <a href="https://www.trychroma.com/">
+    <img alt="ChromaDB" src="https://img.shields.io/badge/chromadb-0.5+-5f2eea?logo=databricks&logoColor=white">
+  </a>
+  <a href="https://groq.com/">
+    <img alt="Groq" src="https://img.shields.io/badge/Groq-LLM-f97316">
+  </a>
+  <a href="https://ollama.com/">
+    <img alt="Ollama" src="https://img.shields.io/badge/Ollama-Local%20LLMs-000000?logo=ollama&logoColor=white">
+  </a>
+  <a href="https://huggingface.co/">
+    <img alt="HuggingFace" src="https://img.shields.io/badge/HuggingFace-Embeddings-ffd21e?logo=huggingface&logoColor=black">
+  </a>
+  <a href="https://streamlit.io/">
+    <img alt="Streamlit" src="https://img.shields.io/badge/streamlit-1.36+-ff4b4b?logo=streamlit&logoColor=white">
+  </a>
+  <a href="https://docs.pytest.org/">
+    <img alt="Pytest" src="https://img.shields.io/badge/pytest-8.0+-0a9edc?logo=pytest&logoColor=white">
+  </a>
+</p>
+
+<p align="center">
+  <!-- Architecture Badges -->
+  <img alt="RAG" src="https://img.shields.io/badge/Architecture-RAG-2563eb?logo=semantic-release&logoColor=white">
+  <img alt="LLM" src="https://img.shields.io/badge/Powered%20by-LLM-9333ea">
+  <img alt="Vector Search" src="https://img.shields.io/badge/Vector%20Search-ChromaDB-5f2eea">
+  <img alt="Web Scraping" src="https://img.shields.io/badge/Web%20Scraping-BeautifulSoup%20%2B%20lxml-16a34a">
+</p>
+
+<p align="center">
+  <b>LLM Orchestration:</b> LangChain &nbsp; | &nbsp;
+  <b>Vector Store:</b> ChromaDB &nbsp; | &nbsp;
+  <b>UI:</b> Streamlit
+</p>
+
+<p align="center">
+  Healthline Assistant uses Retrieval-Augmented Generation (RAG) with vector search to retrieve relevant health news articles and generate grounded, citation-ready responses using modern LLMs.
+</p>
+
+
+---
+
+A fast, grounded, Healthline‑only RAG-based chatbot that builds local embeddings from provided URLs and answers strictly from those sources.
 
 ---
 
@@ -17,6 +68,11 @@ Inspired by a conversation with a doctor neighbour who found it time‑consuming
 
 ---
 
+## 🎥 Demo Video
+
+[![Watch the demo](artifacts/thumbnail.png)](artifacts/video_demo.mp4)
+
+---
 ## 📂 Folder Structure
 
 ```bash
@@ -142,14 +198,6 @@ Detects duplicates across formats using canonical form (e.g., `healthline.com/..
 
 ---
 
-## 📌 Quick Tips
-
-- Re‑indexing resets prior embeddings; keep distinct sessions per topic for focused retrieval.  
-- Use precise, article‑aligned queries; for multi‑article tasks, the system can summarize each article separately.  
-- If a fact isn’t in the supplied Healthline sources, the assistant will return the exact fallback rather than hallucinate.
-
----  
-
 ## 🛠️ Technologies Used
 
 - ✅ Python 3.10+  
@@ -182,3 +230,14 @@ Detects duplicates across formats using canonical form (e.g., `healthline.com/..
 ## ⚠️ Disclaimer
 
 “All rights to the content in the provided URLs belong solely to Healthline Media LLC.”  
+
+---
+
+## 📌 Quick Tips
+
+- Re‑indexing resets prior embeddings; keep distinct sessions per topic for focused retrieval.  
+- Use precise, article‑aligned queries; for multi‑article tasks, the system can summarize each article separately.  
+- If a fact isn’t in the supplied Healthline sources, the assistant will return the exact fallback rather than hallucinate.  
+---
+
+*Expect a RAG-powered, assumption-averse approach to answers.*
